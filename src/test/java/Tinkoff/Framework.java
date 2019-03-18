@@ -1,5 +1,6 @@
 package Tinkoff;
 
+import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -24,9 +25,9 @@ public class Framework {
         driver.manage().window().maximize(); // разворачиваем окно
     }
 
-//    @After
-//    public void close() {
-//        driver.quit();
-//    }
+    @After
+    public void close() {
+        driver.quit();
+    }
 
 }
